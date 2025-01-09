@@ -1,0 +1,295 @@
+@charset "utf-8" ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    color: #000;
+    font-family: 'Pretendard-Regular';
+    max-width: 1920px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    height: 150vw;
+}
+
+
+.header {
+    
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .inner .logo {
+    background-color: #B7CAFA;
+    max-width: 64px;
+    width: 100%;
+    height: 64px;
+    border-radius: 50%;
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header .inner .header-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.header .inner .header-menu a{
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+}
+
+.header .inner .header-menu a::before {
+    content: "";
+    width: 100%;
+    height: 13px;
+    background-color: #B0BCF8;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: -1;
+}
+
+.section-01 {
+    margin-top: 230px;
+    text-align: center;
+    font-size: 167px;
+    
+}
+
+.section-01 .section-01-text h2 {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.section-01 .section-01-text h2::before {
+    content: "";
+    width: 97.3%;
+    height: 100px;
+    background-color: #E0E591;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 19px;
+    z-index: -1;
+}
+
+
+.section-01 .section-01-text-1 h2 {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    margin-bottom: 220px;
+}
+
+.section-01 .section-01-text-1 h2::before {
+    content: "";
+    width: 97.8%;
+    height: 100px;
+    background-color: #E0E591;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 16px;
+    z-index: -1;
+}
+
+.section-02 {
+    max-width: 1211px;
+    width: 100%;
+    height: 545px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.section-02 .section-02-image {
+    max-width: 318px;
+    height: 409px;
+
+}
+
+.section-02 .section-02-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.section-02 .section-02-image .section-02-text {
+    display: flex;
+    gap: 15px;
+ 
+}
+
+.section-02 .section-02-image .section-02-text p {
+    font-size: 18px;
+}
+.section-02 .section-02-image .section-02-text h6 {
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+.section-02 .section-02-image a {
+    margin-top: 10px;
+    max-width: 105px;
+    width: 100%;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+.section-02 .section-02-item {
+    
+}
+
+.section-02 .section-02-item h5 {
+    font-size: 20px;
+    font-weight: 400;
+    text-shadow: 2px 5px 2px rgb(0, 255, 0);
+    margin-bottom: 10px;
+}
+.section-02 .section-02-item h5:nth-child(1) {
+    margin-top: 30px;
+}
+.section-02 .section-02-item .item-01 {
+    display: flex;
+    gap: 16px;
+}
+
+.section-02 .section-02-item .item-01 ul {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.section-02 .section-02-item .item-01 ul li:nth-child(1) {
+    font-size: 18px;
+}
+.section-02 .section-02-item .item-01 ul li:nth-child(3) {
+    color: #999999;
+}
+
+.section-02 .section-02-item .item-01 .p p {
+    width: 7px;
+    height: 82px;
+    background-color: #E9DDDD;
+    margin-bottom: 40px;
+}
+
+.section-02 .section-02-item .item-01 .p-2 p {
+    position: relative;
+    top: 2px;
+    width: 4px;
+    height: 19px;
+    background-color: #E9DDDD;
+    margin-bottom: 40px;
+}
+
+.section-02 .section-02-item .item-03 {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section-03 {
+
+}
+
+.section-03 .section-03-text {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+.section-03 .section-03-text h2{
+    position: relative;
+    display: inline-block;
+    font-size: 100px;
+    
+}
+
+.section-03 .section-03-text h2::before {
+    content: "";
+    width: 98%;
+    height: 40px;
+    background-color: #ABF8AE;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 6px;
+    z-index: -1;
+}
+
+.section-03 .section-03-menu a{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 8px 20px;
+}
+
+.section-03 .section-item {
+    max-width: 1820px;
+    width: 100%;
+}
+
+
+.section-03 .section-item .section-item-01 {
+    max-width: 591px;
+    width: 100%;
+    /* height: 439px; */
+    height: 100%;
+    background-color: #3E3838;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.section-03 .section-item .section-item-01 img {
+    margin: 0 auto;
+    width: 90%;
+    object-fit: cover;
+}
+.section-03 .section-item-all {
+    display: flex;
+    gap: 23px;
+}
+
+
+
+
