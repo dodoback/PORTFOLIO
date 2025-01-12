@@ -35,6 +35,21 @@
     font-style: normal;
 }
 
+.span-1 {
+    display: none;
+}
+
+.section-02 .section-02-item .item-01 ul:nth-child(2) {
+    display: none;
+}
+.section-02 .section-02-item .item-01 ul p:nth-child(2) {
+    display: none;
+}
+
+.section-02 .section-02-item .item-01 .ul p {
+    display: none;
+}
+
 
 
 li {
@@ -129,6 +144,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 
 }
 
@@ -218,7 +234,8 @@ body {
 }
 
 .section-03 {
-
+    
+    /* flex-wrap: wrap; */
 }
 
 .section-03 .section-03-text {
@@ -245,22 +262,35 @@ body {
 }
 
 .section-03 .section-item {
-    max-width: 1820px;
+
+    max-width: 561px;
     width: 100%;
+    
 }
+
+
+
+/* ******************************* */
 
 
 .section-03 .section-item .section-item-01 {
     max-width: 591px;
     width: 100%;
-    /* height: 439px; */
-    height: 100%;
+    height: 473px;
+    /* height: 100%; */
     background-color: #3E3838;
+    /* background-color: #fff; */
+    /* border: 1px solid #000; */
     display: flex;
     align-items: center;
     border-radius: 10px;
     margin-top: 35px;
 }
+
+/* ******************************* */
+
+
+
 
 .section-03 .section-item .section-item-01 img {
     margin: 0 auto;
@@ -268,8 +298,11 @@ body {
     object-fit: cover;
 }
 .section-03 .section-item-all {
-    display: flex;
-    gap: 23px;
+    max-width: 1820px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex; 
 }
 .section-04 {
    margin-top: 290px;
@@ -285,6 +318,175 @@ body {
 }
 
 
+.section-03 .section-item-all h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section-03 .section-item-all p {
+    margin-top: 10px;
+}
+
+.section-03 .section-item-all ul {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    
+}
+.section-03  .section-item-all a {
+    margin-top: 10px;
+    padding: 7px 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: inline-flex;
+    margin-right: 10px;
+    
+    
+}
+
+.section-03 .section-item-all .section-item:nth-child(4) {
+    /* margin-top: 170px; */
+}
+.section-03 .section-item-all .section-item:nth-child(5) {
+    /* margin-top: 170px; */
+}
+.section-03 .section-item-all .section-item:nth-child(6) {
+    /* margin-top: 170px; */
+}
+.section-03 .section-item-all .section-item:nth-child(6) .section-item-01 img {
+    
+}
 
 
 
+
+
+
+
+@media screen and (max-width: 960px) {
+
+body {
+    max-width: 960px;
+    width: calc(100% - 100px);
+}
+
+.section-01 {
+    font-size: 85px;
+}
+
+.section-02 {
+    max-width: 768px;
+    width: 100%;
+    height: 417px;
+}
+
+.section-02 .section-02-image img {
+    max-width: 220px;
+    width: 100%;
+    height: 283px;
+}
+
+.section-02 .section-02-item {
+    max-width: 458px;
+    width: 100%;
+    margin-top: -30px;
+}
+
+.section-02 .section-02-item .item-01 .p p {
+    width: 4px;
+    height: 125px;
+}
+
+.section-02 .section-02-item h5 {
+    font-size: 18px;
+}
+
+.section-02 .section-02-item .item-01 ul {
+    align-items: start;
+}
+.section-02 .section-02-item .item-01 ul:nth-child(1) {
+    display: none;
+}
+
+
+.section-02 .section-02-item .item-01 ul:nth-child(2) {
+    display: block;
+    display: flex;
+    
+}
+
+.span-1 {
+    display: block;
+}
+.span-1 .span-text {
+    display: flex;
+   position: relative;
+   right: 50px;
+}
+
+.span-1 .span-text p {
+    position: relative;
+    top: 20px;
+    right: 5px;
+}
+
+.span-1 .span-text h6 {
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.section-02 .section-02-item .item-01 ul {
+    margin-bottom: 20px;
+}
+
+
+.section-02 .section-02-item .item-01 ul p:nth-child(2) {
+    display: block;
+}
+
+.section-02 .section-02-item .item-01 .ul p {
+    display: block;
+    margin-left: 55px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    color: #999999;
+    
+    
+}
+
+.section-02 .section-02-item .item-01 ul li:nth-child(1) {
+    font-size: 15px;
+}
+.section-02 .section-02-item .item-01 ul li:nth-child(2) {
+    font-size: 16px;
+}
+.section-02 .section-02-item .item-01 ul li:nth-child(3) {
+    font-size: 16px;
+}
+
+
+.section-02 .section-02-image .section-02-text p {
+    font-size: 15px;
+}
+.section-02 .section-02-image .section-02-text h6 {
+    font-size: 15px;
+}
+
+.section-02 .section-02-item .item-03 {
+    margin-top: 0px;
+    gap: 15px;
+}
+
+.section-02 .section-02-item .item-03 img {
+    width: 31px;
+    height: 35px;
+}
+.section-02 .section-02-item .item-03 li {
+    font-size: 14px;
+}
+
+
+}
