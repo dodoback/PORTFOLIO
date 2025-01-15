@@ -191,6 +191,11 @@ body {
     justify-content: center;
     display: flex;
     border-radius: 10px;
+    transition: 0.9s;
+}
+.section-02 .section-02-image a:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .section-02 .section-02-item {
@@ -358,6 +363,7 @@ body {
     border-radius: 10px;
     display: inline-flex;
     margin-right: 10px; 
+    transition: 0.9s;
 }
 .section-03 .section-item-all a:hover {
     background-color: #000;
@@ -641,3 +647,7 @@ body {
 
 
 }
+
+
+
+
