@@ -351,15 +351,17 @@ body {
     gap: 10px;
     
 }
-.section-03  .section-item-all a {
+.section-03 .section-item-all a {
     margin-top: 10px;
     padding: 7px 10px;
     border: 1px solid #000;
     border-radius: 10px;
     display: inline-flex;
-    margin-right: 10px;
-    
-    
+    margin-right: 10px; 
+}
+.section-03 .section-item-all a:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .section-03 .section-item-all .section-item:nth-child(4) {
@@ -639,4 +641,3 @@ body {
 
 
 }
-
