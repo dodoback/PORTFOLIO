@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/mein.css">
+    
 </head>
 <body>
     <div class="header">
@@ -328,10 +330,97 @@
     <div class="section-04">
         <div class="section-03-text">
             <h2>Design</h2>
-        </div><!-- .section-03-text end -->  
-    </div><!-- .section-04 end -->
+        </div><!-- .section-03-text end --> 
+
+   
+ <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/도넛.png" alt="">
+            </div><!-- swiper-slide -->
+
+            <div class="swiper-slide">
+                <img src="img/예쁜디자인.png" alt="">
+            </div><!-- swiper-slide -->
+
+            <div class="swiper-slide">
+                <img src="img/블랙핑크.png" alt="">
+            </div><!-- swiper-slide -->
+
+            <div class="swiper-slide">
+                <img src="img/펜툴.png" alt="">
+            </div><!-- swiper-slide -->
+
+            <div class="swiper-slide">
+                <img src="img/해외여행.png" alt="">
+            </div><!-- swiper-slide -->
+
+            <div class="swiper-slide">
+                <img src="img/해외여행1.png" alt="">
+            </div><!-- swiper-slide -->
+
+            <div class="swiper-slide">
+                <img src="img/해외여행2.png" alt="">
+            </div><!-- swiper-slide -->
+
+            <div class="swiper-slide">
+                <img src="img/미키마우스.png" alt="">
+            </div><!-- swiper-slide -->
+
+            <div class="swiper-slide">
+                <img src="img/블랙프라이데이.png" alt="">
+            </div><!-- swiper-slide -->
+
+            <div class="swiper-slide">
+                <img src="img/오늘의 핫딜.png" alt="">
+            </div><!-- swiper-slide -->
 
 
+        </div>
+        <div class="swiper-pagination"></div>
+    </div><!-- swiper   -->
+
+</div><!-- .section-04 end -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop:true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: 'false',
+            
+            
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                
+            },
+
+            breakpoints:{
+                961:{
+                    slidesPerView: 4,
+                    spaceBetween: 30,  
+                },
+                441:{
+                    slidesPerView: 3,
+                    spaceBetween: 30,  
+                },
+                1:{
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,  
+                },
+
+            }
+        
+        });
+
+    </script>
 
 
 
