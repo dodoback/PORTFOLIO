@@ -13,18 +13,28 @@
         <div class="inner">
             <div class="logo">K</div>
             <div class="header-menu">
-                <a href="#">Intro</a>
-                <a href="#">About</a>
-                <a href="#">Project</a>
-                <a href="#">Design</a>
-                <a href="#">Contact</a>
+                <a href="#intro">Intro</a>
+                <a href="#about">About</a>
+                <a href="#project">Project</a>
+                <a href="#design">Design</a>
+                <a href="#contact">Contact</a>
                 <div class="logo-icon">
-                    <a href="#"><img src="img/icons8-메뉴-50.png" alt="menu"></a>
-
-                </div><!-- .logo0-icon end -->
-            </div><!-- .header-menu end -->
-        </div><!-- .inner end -->
-    </div><!-- .header end -->
+                    <!-- 메뉴 아이콘 -->
+                    <button id="menuToggle">
+                        <img src="img/icons8-메뉴-50.png" alt="menu">
+                    </button>
+                </div>
+            </div>
+            <!-- 숨겨진 메뉴 (초기에는 화면에서 안 보임) -->
+            <div id="dropdownMenu" class="dropdown-menu">
+                <a href="#intro">Intro</a>
+                <a href="#about">About</a>
+                <a href="#project">Project</a>
+                <a href="#design">Design</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
 
     <div class="section-01">
         <div class="section-01-text">
@@ -54,7 +64,7 @@
                 <p>E-MAIL</p>
                 <h6>qmelo72@naver.com</h6>
             </div><!-- .section-02-text end -->
-            <a href="img/김동현 입사지원서.pdf" target="_blank"">이력서</a>
+            <a href="img/김동현 입사지원서.pdf" target="_blank">이력서</a>
         </div><!-- .section-02-image end -->
 
         <div class="section-02-line">
@@ -193,11 +203,11 @@
 
     </div><!-- .section-02 end -->
     
-
+    <div id="project" class="section-03">
     <div class="section-03">
         <div class="section-03-text">
             <h2>PROJECT</h2>
-        </div><!-- .section-03-text end -->  
+        </div> 
         
         <div class="section-03-menu">
             <a href="#">ALL</a>
@@ -321,7 +331,7 @@
 
 
 
-
+</div>
     </div><!-- .section-03 end -->
 
 
@@ -389,42 +399,36 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop:true,
-            slidesPerView: 4,
-            spaceBetween: 30,
-            centeredSlides: 'false',
-            
-            
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                
-            },
-
-            breakpoints:{
-                961:{
-                    slidesPerView: 4,
-                    spaceBetween: 30,  
-                },
-                441:{
-                    slidesPerView: 3,
-                    spaceBetween: 30,  
-                },
-                1:{
-                    slidesPerView: 1.5,
-                    spaceBetween: 30,  
-                },
-            
-            }
-
-
-
-        });
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 30,
+        centeredSlides: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+    breakpoints: {
+        961: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+    },
+        441: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+    },
+        1: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+    },
+  },
+  slideToClickedSlide: true, // 추가: 클릭한 슬라이드를 가운데로 이동
+});
 
     </script>
 
-
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
 
 
 
