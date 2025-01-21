@@ -768,6 +768,7 @@ body.inverted .swiper-slide {
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     position: relative;
     top: 4px;
+    left: -20px;
 }
 
 .section-05 {
@@ -1117,17 +1118,6 @@ body {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-    
     .section-03 .section-item .section-item-01 {
         max-width: 670px;
         width: 100%;
@@ -1138,9 +1128,31 @@ body {
         width: 100%;
     }
  
+
+    .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        position: relative;
+        top: -10px;
+        left: 10px;
+        
+    }
+
+    
     
 }  /* 691 end */
 
+
+@media screen and (max-width: 610px) {
+    .swiper-pagination-bullet {
+        width: 4px;
+        height: 4px;
+        position: relative;
+        top: -10px;
+        left: 10px;
+        
+    }
+}
 
 
 @media screen and (max-width: 507px) {

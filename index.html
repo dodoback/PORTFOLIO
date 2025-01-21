@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/mein.css">
     
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    
+   
+
+
     
 </head>
 <body>
@@ -351,44 +358,65 @@
  <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
+
             <div class="swiper-slide">
-                <img src="img/도넛.png" alt="">
+                <a href="img/도넛.png" data-fancybox="images">
+                    <img src="img/도넛.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
             <div class="swiper-slide">
-                <img src="img/예쁜디자인.png" alt="">
+                <a href="img/예쁜디자인.png" data-fancybox="images">
+                    <img src="img/예쁜디자인.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
             <div class="swiper-slide">
-                <img src="img/블랙핑크.png" alt="">
+                <a href="img/블랙핑크.png" data-fancybox="images">
+                    <img src="img/블랙핑크.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
             <div class="swiper-slide">
-                <img src="img/펜툴.png" alt="">
+                <a href="img/펜툴.png" data-fancybox="images">
+                    <img src="img/펜툴.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
             <div class="swiper-slide">
-                <img src="img/해외여행.png" alt="">
+                <a href="img/해외여행.png" data-fancybox="images">
+                    <img src="img/해외여행.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
             <div class="swiper-slide">
-                <img src="img/해외여행1.png" alt="">
+                <a href="img/해외여행1.png" data-fancybox="images">
+                    <img src="img/해외여행1.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
             <div class="swiper-slide">
-                <img src="img/해외여행2.png" alt="">
+                <a href="img/해외여행2.png" data-fancybox="images">
+                    <img src="img/해외여행2.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
             <div class="swiper-slide">
-                <img src="img/미키마우스.png" alt="">
+                <a href="img/미키마우스.png" data-fancybox="images">
+                    <img src="img/미키마우스.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
             <div class="swiper-slide">
-                <img src="img/블랙프라이데이.png" alt="">
+                <a href="img/블랙프라이데이.png" data-fancybox="images">
+                    <img src="img/블랙프라이데이.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
             <div class="swiper-slide">
-                <img src="img/오늘의 핫딜.png" alt="">
+                <a href="img/오늘의 핫딜.png" data-fancybox="images">
+                    <img src="img/오늘의 핫딜.png" />
+                  </a>
             </div><!-- swiper-slide -->
 
 
@@ -406,9 +434,12 @@
     <script>
     var swiper = new Swiper(".mySwiper", {
         loop: true,
+        autoplay:{delay:1000,},
+        speed:1500,
         slidesPerView: 5,
         spaceBetween: 30,
         centeredSlides: true,
+        
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
