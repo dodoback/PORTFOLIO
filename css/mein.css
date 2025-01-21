@@ -545,7 +545,7 @@ body.inverted .section-03 .section-03-menu a:hover {
     width: 100%; */
     /* width: 30.60vw; */
     max-width: 1803px;
-        width: 32%;
+        width: 31%;
 }
 
 
@@ -557,7 +557,7 @@ body.inverted .section-03 .section-03-menu a:hover {
     /* max-width: 561px;
     width: 100%; */
 
-    width: 30.57vw;
+    width: 29.57vw;
     height: 24.64vw;
     /* overflow: hidden; */
     /* height: 473px; */
@@ -570,10 +570,6 @@ body.inverted .section-03 .section-03-menu a:hover {
     align-items: center;
     border-radius: 10px;
     margin-top: 35px;
-
-
-   
-
 
 
 }
@@ -607,7 +603,7 @@ body.inverted .section-03 .section-03-menu a:hover {
 .section-03 .section-item-all {
     /* max-width: 1820px;
     width: 100%;  */
-    /* justify-content: space-between; */
+    justify-content: space-between;
 
     gap: 23px;
     flex-wrap: wrap;
@@ -663,7 +659,7 @@ body.inverted .section-03 .section-03-menu a:hover {
     background-color: white; /* 기본 배경색 */
     color: black; /* 기본 글씨 색 */
     display: inline-flex;
-    margin-right: 15px;
+    margin-right: 10px;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
