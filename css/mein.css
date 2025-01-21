@@ -293,6 +293,12 @@ body.inverted a {
 }
 
 
+#intro {
+   position: relative;
+   bottom: 300px;
+}
+
+
 
 .section-01 {
     margin-top: 230px;
@@ -316,6 +322,13 @@ body.inverted a {
     color: #000;
     margin-bottom: 220px;
 }
+
+#about {
+    position: relative;
+    bottom: 200px;
+    opacity: 0;
+}
+
 
 .section-02 {
     /* max-width: 1211px;
@@ -601,6 +614,11 @@ body.inverted .section-03 .section-03-menu a:hover {
     display: flex; 
 
 }
+
+
+
+
+
 .section-04 {
    margin-top: 150px;
 }
